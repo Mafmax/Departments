@@ -28,7 +28,8 @@ $(function () {
         $('#group' + id).remove();
     };
     session.client.onEditGroup = function (group) {
-        $('#group-name' + id).text(group.Name + ' [' + group.Id + ']');
+        
+        $('#group-name' + group.Id).text(group.Name + ' [' + group.Id + ']');
     }
 
     session.client.onCompanyChanged = function (company) {
